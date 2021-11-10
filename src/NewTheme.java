@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class NewTheme {
     public static void Cristmas() throws IOException {
-        File file = new File("psihologist");
+        File file = new File("Best Friend");
         if (!file.exists()) file.createNewFile();
         Properties prop = new Properties();
         prop.load(new FileInputStream(file));
@@ -86,15 +86,15 @@ public class NewTheme {
             };
             switch (st){
                 case "оракул" :
-                    System.out.println("Друг<>Включаю");
+                    System.out.println("Семечка--Включаю");
                     Orakul.INFORMATION();
                     break;
                 case "угадай число" :
-                    System.out.println("Друг<>Включаю");
+                    System.out.println("Семечка--Включаю");
                     GuessTheNumber.INFORMATION2();
                     break;
                 case "выход" :
-                    System.out.println("Друг<>Спасибо за общение!Ты в любой момент можешь обратиться ко мне снова ☺\n A____A\n" +
+                    System.out.println("Семечка--Спасибо за общение!Ты в любой момент можешь обратиться ко мне снова ☺\n A____A\n" +
                             "|・ㅅ・| Meow\n" +
                             "|っ　ｃ|\n" +
                             "|　　　|\n" +
@@ -113,7 +113,7 @@ public class NewTheme {
                     WriteMessageForYou.INFORMATION3();
                     break;
                 case "дневник":
-                    System.out.println("Друг<>Запускаю");
+                    System.out.println("Семечка--Запускаю");
                     NoteBook.INFORMATION4();
                     break;
                 case "ты лох" :
@@ -141,7 +141,7 @@ public class NewTheme {
             for (Object o :prop.keySet()){
                 if (format(st).toLowerCase().contains(o.toString())) rep = prop.get(o).toString();
             }
-            System.out.println("Друг<>"+rep );
+            System.out.println("Семечка--"+rep );
         }
     }
     private static String format(String sty){
